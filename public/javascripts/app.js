@@ -31,6 +31,7 @@ app.controller('main', ['$scope', 'Socket',
             Socket.emit('message', {
                 content: $scope.message
             })
+            $scope.message = '';
         }
     }
 ]);
