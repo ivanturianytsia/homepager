@@ -18,10 +18,12 @@
     <body ng-controller="main">
         <div class="panel panel-default">
             <div class="panel-body">
-                <h3 ng-hide="avalible">Waiting for connection</h3>
-                <form ng-show="avalible">
+                <form>
                     <div class="input-group">
-                        <input class="form-control input-lg" ng-model="message" ng-change="send()" maxlength="32" autocomplete="off" placeholder="Say something" />
+                        <input type="text" class="form-control" ng-model="message" placeholder="New message">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" ng-disabled="!message.length" ng-click="send()" type="button">Send</button>
+                        </span>
                     </div>
                 </form>
             </div>
