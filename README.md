@@ -1,2 +1,2 @@
 # homepager
-Node.js and Raspberry Pi, send messages from web
+Node.js and Raspberry Pi, send messages from web. Requires an 2x16 LCD screen, buzzer, LED and a button. Compose a text in a webapp, press 'Send'; message is stored on the server, LED blinks, buzzer makes a sound, LCD says 'You have a new message'; when user presses the button, if there are any messages stored, first one is displayed on LCD and deleted from messages array; as user repeats actions, next messages are displayed on the screen until the array is empty. App uses Socket.io and Express.
